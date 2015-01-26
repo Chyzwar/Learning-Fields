@@ -1,0 +1,8 @@
+A0;Farrow, Monica;12
+A1;Browning, David;5
+A3;Anderson, John;34
+A4;Read, Helen;20
+A5;White, Emma;10
+A6;Green, Kate  ; 6
+A7; Black, Chris ;7
+A8;Grey, Ruth;  8

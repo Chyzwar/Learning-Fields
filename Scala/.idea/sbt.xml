@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaSbtSettings">
+    <option name="linkedExternalProjectsSettings">
+      <SbtProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/Progfun/src/Week1/Assigment1/recfun" />
+        <option name="jdk" value="1.7" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/Progfun/src/Week1/Assigment1/recfun" />
+            <option value="$PROJECT_DIR$/Progfun/src/Week1/Assigment1/recfun/project" />
+          </set>
+        </option>
+      </SbtProjectSettings>
+    </option>
+  </component>
+</project>
+

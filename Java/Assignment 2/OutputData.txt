@@ -1,0 +1,44 @@
+The report
+ Full report of competitors
+Id    Name of Competitor      Overall
+100   Ross  Drummond Law       4,0 
+101   Stian  Dalviken          2,7 
+102   Name  Nameless           3,7 
+103   Monica  Farrow           2,3 
+104   Florent  Gonin           1,3 
+105   Duncan  Struan MacDonald 1,7 
+106   Joanne  Rowling          2,3 
+107   Error  Line              4,0 
+108   Dim  Sum Now             3,0 
+109   Moose  Bear Wolfing      3,0 
+110   Hans-Wolfgang  Loidl     3,7 
+111   George  Heriot           2,3 
+112   Brian  O'Keefe           4,0 
+201   Keith  John Talbot       4,0 
+201   Jane  Mackintosh         3,5 
+202   Kamontorn  Khamrun       4,0 
+203   John  Macdonald          4,3 
+204   Mike  Talbot             3,5 
+205   Sarah  Moore             4,0 
+206   Matt  Scott              4,5 
+208   Karen  Macdonald Scott   3,0 
+210   Keith  Macdonald         4,0 
+213   Punyanuch  Borwarnginn   4,5 
+214   John  McNeil             4,3 
+300   Piece  of Cake           2,7 
+301   Chariot  of Fire         2,2 
+302   Here  For Beer           1,9 
+303   The  Regulators          3,0 
+304   The  Bee Team            1,3 
+305   TheRun  Away Bakers      2,0 
+306   The  Downtown Destroyer  3,4 
+307    Spit-Phya               4,7 
+308   The  Bath Mobile         3,2 
+309   The  Coffin Dodgers      0,9 
+310   Fly  High                1,3 
+
+Competitor with highest overall score is: 
+Full details for 307:
+Competitor #307 is  Spit-Phya.
+ Spit-Phya have level of art: 5 and responce from audience 98% , and received these scores: 5, 5, 5, 4, 5.
+This gives an overall score of 4.704

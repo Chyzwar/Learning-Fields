@@ -1,0 +1,45 @@
+body{
+	background-color: #d9eff9;
+}
+.vertical-align {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.main-header {
+    background-color: #90D4F6;
+    color: black;
+    font-weight: bold;
+}
+.nav-item {
+    font-size: 140%;
+    font-weight: bold;
+    background-color: #90D4F6;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.nav-item:hover{
+	    background-color: #b3d3e2;
+}
+.input-wrapper{
+	 float: none;
+   margin: 0 auto;
+   width: 70%;
+   margin-top:30px;
+}
+#error-message-uuid, #error-message, #error-message-book, #error-message-user{
+	color: red;
+}
+.image-wrap{
+	min-height: 700px;
+}
+#submit-browser{
+	margin-top:20px;
+	float: right;
+}
+#req-list{
+	width: 400px;
+}

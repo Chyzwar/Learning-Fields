@@ -1,0 +1,55 @@
+//Names of teams are made of many parts. I can't implement the same class as you did.
+//I assume that Team name can be made on maximum 5 words
+public class Name {
+  private String firstName;
+  private String middleName;
+  private String lastName1;
+  private String lastName2;
+  
+  public Name(String fName, String mName) {
+		firstName = fName;
+		middleName = mName;
+	
+  }
+  
+  public Name(String fName, String mName, String lName1) 
+  {
+		firstName = fName;
+		middleName = mName;
+		lastName1 = lName1;
+  }
+ public Name(String fName, String mName, String lName1,String lName2)
+ {
+ 		firstName = fName;
+		middleName = mName;
+		lastName1 = lName1;
+		lastName2 = lName2;
+ }
+  public Name (String fullName)
+  {
+	  int spacePos1 = fullName.indexOf(' ',0);
+	  if (spacePos1<fullName.length())
+	  firstName = fullName.substring(0, spacePos1);
+	  middleName = fullName.substring(spacePos1,fullName.length());
+	  
+	  int spacePos2 = fullName.lastIndexOf(' ',spacePos1+1);
+	  if (spacePos1!=spacePos2)
+	  {
+	  int spacePos22 = fullName.lastIndexOf(' ',spacePos1+1);
+	  middleName = fullName.substring(spacePos1+1,spacePos22);
+	  }
+	  else lastName1 =fullName.substring(spacePos1,fullName.length());
+	  
+	  int spacePos22 = fullName.lastIndexOf(' ',spacePos1+1);
+	  int spacePos223 = fullName.lastIndexOf(' ',spacePos1+1);
+	  if (spacePos22!=spacePos2)
+	  {
+		  int spacePos33 = fullName.lastIndexOf(' ',spacePos22+1);
+		  lastName1 = fullName.substring(spacePos223+1,spacePos33);
+	  }
+	  else lastName2 =fullName.substring(spacePos1,fullName.length());
+	  	
+	  }
+	  
+  
+  

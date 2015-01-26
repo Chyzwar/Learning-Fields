@@ -1,0 +1,27 @@
+package restaurant.orders;
+
+public class DishOrder extends Dish {
+	private int tableID;
+	private int quantity;
+	private Integer orderSequence;
+
+	public DishOrder()
+	{
+		
+	}
+	
+	public boolean equals() 
+	{
+		throw new UnsupportedOperationException();
+	}
+
+	public String getTableID() 
+	{
+		throw new UnsupportedOperationException();
+	}
+
+	public int getQuantity() 
+	{
+		return this.quantity;
+	}
+}

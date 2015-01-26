@@ -1,0 +1,181 @@
+package restaurant.orders;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+/**This Subclass of Dish class is representing dish orders.
+ * Class have also methods specific only for DishOrder
+ * Naming convention could be better, but specification was already done
+ * @author Marcin Kopacz
+ *
+ */
+
+
+public class OrderCollection 
+{
+
+
+	public HashSet<DishOrder> orderSet;
+	private static int orderSequence = 0;
+
+	
+	public OrderCollection() 
+	{
+		orderSet = new HashSet<DishOrder>();
+	}
+
+	/** adds DishOrder item to HashMap 
+	 * @param order
+	 */
+	public void add(DishOrder order) 
+	{
+		orderSet.add(order);
+	}
+
+
+	/** reads file with given name, extracting DishOrder data, creating DishOrder
+	 * and adding them to the menu set
+	 * Blank lines are skipped
+	 * Validation for integer, missing items
+	 * @param filename the name of the input file
+	 */
+	public void readFileOrders(String aFilename)
+	{
+		try
+		{
+			File f = new File(aFilename);
+			Scanner scanner = new Scanner(f);
+			while (scanner.hasNextLine())
+			{
+				//read first line and process it
+				String inputLine = scanner.nextLine(); 
+				if (inputLine.length() != 0) 
+				{//ignored if blank line
+					processLineOrders(inputLine);
+				}
+			}
+			scanner.close();
+
+		}
+		//if the file is not found, stop with system exit
+		catch (FileNotFoundException fnf)
+		{
+			System.out.println( aFilename + " not found ");
+			System.exit(0);
+		}
+	}
+
+
+	/**
+	 * Processes line, extracts data, creates DishOrder objects
+	 * adds DishItem to HashSet, 
+	 * non-numeric marks and missing items
+	 * Will still crash if name entered without a space
+	 * @param line the line to be processed
+	 */
+	public void processLineOrders(String aLine) 
+	{
+		orderSequence = orderSequence + 1;
+		try 
+		{
+			String parts [] = aLine.split(",");
+
+			String tableIDString = parts[0];
+			int tableID = Integer.parseInt(tableIDString);
+
+			String dishName = parts[1];
+			dishName = dishName.trim();
+
+			String quantityString = parts[2];
+			int quantity = Integer.parseInt(quantityString);
+
+			String category = parts[2];
+			category = category.trim();
+
+
+			DishOrder c = new DishOrder(tableID,dishName, quantity, orderSequence);
+			this.add(c);
+
+		}
+
+		//for these two formatting errors, ignore lines in error and try and carry on
+		//this catches trying to convert a String to an integer
+		catch (NumberFormatException nfe) 
+		{
+			String error = "Number conversion error in '" + aLine + "'  - " 
+					+ nfe.getMessage();
+			System.out.println(error);
+		}
+		//this catches missing items if only one or two items
+		//other omissions will result in other errors
+		catch (ArrayIndexOutOfBoundsException air)
+		{
+			String error = "Not enough items in  : '" + aLine
+					+ "' index position : " + air.getMessage();
+			System.out.println(error);
+		}
+
+	}
+
+	/**Take HashSet of orders, put names into list
+	 * Put list into hashSet and get frequency based on that list
+	 * @return string frequency report
+	 */
+	public String frequencyReport()  
+	{
+		String freqReport = "FREQUENCY REPORT \r\n";
+		
+		ArrayList<String> dishNamesList = new ArrayList<String>();
+
+		for (DishOrder d : orderSet) 
+		{
+			String dishName = d.getName();
+			dishNamesList.add(dishName);
+		}
+
+	
+		Set<String> uniqueSet = new HashSet<String>(dishNamesList);
+		for (String dishName : uniqueSet) 
+		{
+			
+			freqReport += String.format("%-35s",dishName);
+			freqReport += Collections.frequency(dishNamesList, dishName);
+			freqReport += "\n";
+		}
+		freqReport += "\n";
+		return freqReport;
+	}
+	
+	/**Calculate frequency orders for a dish with given name
+	 * @param d(dishName)
+	 * @return 
+	 */
+	public int getFrequencyForDish(String d)
+	{
+	int freq = 0;
+	ArrayList<String> dishNamesList = new ArrayList<String>();
+
+	for (DishOrder p : orderSet) 
+	{
+		String dishName = p.getName();
+		dishNamesList.add(dishName);
+	}
+	freq = Collections.frequency(dishNamesList,d);
+	return freq;
+	}
+	
+	
+	/**Return collection of orders in HashSet
+	 * @return HashSet
+	 */
+	public HashSet<DishOrder> getHashSetOfOrders()
+	{
+		return orderSet;
+	}
+	
+}

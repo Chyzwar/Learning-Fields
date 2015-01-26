@@ -1,0 +1,92 @@
+[{
+    "firstName": [
+        "Jack",
+        "text"
+    ],
+    "id": 1,
+    "lastName": [
+        "Rackum",
+        "text"
+    ],
+    "userId": 1
+}, {
+    "firstName": [
+        "Maria",
+        "text"
+    ],
+    "id": 3,
+    "lastName": [
+        "Quinn",
+        "text"
+    ],
+    "userId": 1
+}, {
+    "birthday": [
+        "",
+        "date"
+    ],
+    "cellPhone": [
+        "",
+        "tel"
+    ],
+    "email": [
+        "john@doe.com",
+        "email"
+    ],
+    "firstName": [
+        "John",
+        "text"
+    ],
+    "homePhone": [
+        "",
+        "tel"
+    ],
+    "id": 4,
+    "lastName": [
+        "Doe",
+        "text"
+    ],
+    "userId": 1,
+    "website": [
+        "",
+        "url"
+    ]
+}, {
+    "email": [
+        "",
+        "email"
+    ],
+    "favoriteColor": [
+        "#85dc28",
+        "color"
+    ],
+    "firstName": [
+        "Sally",
+        "text"
+    ],
+    "id": 5,
+    "lastName": [
+        "Downs",
+        "text"
+    ],
+    "userId": 1
+}, {
+    "email": [
+        "eoq@gmail.com",
+        "email"
+    ],
+    "firstName": [
+        "Ellery Oliver",
+        "text"
+    ],
+    "homephone": [
+        "123-456-7890",
+        "tel"
+    ],
+    "id": 2,
+    "lastName": [
+        "Queen",
+        "text"
+    ],
+    "userId": 1
+}]

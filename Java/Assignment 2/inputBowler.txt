@@ -1,0 +1,13 @@
+100,Ross Drummond Law,4,4,3,4,5,Veteran,Scotland
+101,Stian Dalviken,3,2,5,2,3,Regular,Norway
+102,Name Nameless,4,2,3,4,5,Veteran,Scotland
+103,Monica Farrow,5,5,5,5,5,Veteran,England
+104,Florent Gonin,1,2,4,1,1,Novice,France
+105,Duncan Struan MacDonald,1,1,2,3,2,Veteran,Scotland
+106,Joanne Rowling,2,2,3,2,4,Novice,Scotland
+107,Error Line,1,4,2,6,7,regular,Scotland
+108,Dim Sum Now,5,2,3,1,4,Regular,China
+109,Moose Bear Wolfing,3,3,4,2,3,Regular,Canada
+110,Hans-Wolfgang Loidl,4,3,3,4,4,Veteran,Austria
+111,George Heriot,2,2,3,1,4,Novice,Scotland
+112,Brian O'Keefe,5,4,4,4,3,Veteran,Ireland

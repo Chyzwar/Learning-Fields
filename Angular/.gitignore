@@ -1,0 +1,7 @@
+ElasticSearch/
+Base/
+
+*/node_modules
+*/components
+#Bower Libs there
+*/public/lib

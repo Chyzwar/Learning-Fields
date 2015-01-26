@@ -1,0 +1,66 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="intro">
+    <h1 class="text-center">Task 5. Alike readership</h1>
+    <h2 class="text-center">Submit user and book uuid</h2>
+</div>
+
+<div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group col-md-10">
+                <label for="user-uuid" class="control-label col-xs-4">User UUID </label>
+                <div class="col-xs-8">
+                    <input type="text" name="user-uuid" class="form-control" id="user_uuid" placeholder="User UUID">
+                </div>
+            </div>
+            <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-default btn-info center-block" id="submit-user">Submit</button>
+            </div>
+            <div id="error-message-user"></div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group col-md-10">
+                <label for="book-uuid" class="control-label col-xs-4">Book UUID </label>
+                <div class="col-xs-8">
+                    <input type="text" name="book-uuid" class="form-control" id="book_uuid" placeholder="Book UUID">
+                </div>
+            </div>
+            <div class="form-group col-md-2">
+                <button type="submit" class="btn btn-default btn-info center-block" id="submit-book">Submit</button>
+            </div>
+            <div id="error-message-book"></div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6" id="user-data">
+            <pre id="user-data-like">
+				
+			</pre>
+
+            <pre id="user-data-sorted">
+				
+			</pre>
+
+        </div>
+        <div class="col-md-6" id="book_data">
+
+            <pre id="book-data-like">
+
+			</pre>
+
+            <pre id="book-data-sorted">
+
+			</pre>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

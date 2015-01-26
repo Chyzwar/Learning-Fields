@@ -1,0 +1,45 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+
+public class CompetitionManager
+{
+
+private CompetitorList allCompetitors;
+	
+	public CompetitionManager()
+	{
+	allCompetitors = new CompetitorList();
+	
+	}
+	
+
+	public void run()
+	{
+	
+	allCompetitors.readAllFiles();
+	
+	String report = allCompetitors.getAllCompetitors();
+	String winner = allCompetitors.getWinner();
+	
+	allCompetitors.writeToFile("OutputData.txt", report + winner);
+	//allCompetitors.writeToFile("OutputData.txt", single);
+	}
+	
+	//let user select number of competitor
+	public static int getUserSelection() throws InputMismatchException
+	{
+	    @SuppressWarnings("resource")
+		Scanner in = new Scanner(System.in);  
+	    int integer;
+	    System.out.println("Enter an integer value: ");
+	    integer = in.nextInt();
+	   
+	    return integer;
+	   
+	}
+	
+	
+	
+	
+}

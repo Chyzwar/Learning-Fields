@@ -1,0 +1,118 @@
+#!/usr/bin/python
+from classes.book_data import BookData
+from classes.book_analysis import BookAnalysis
+from classes.browser_analysis import BrowserAnalysis
+from classes.user_analysis import UserAnalysis
+import sys
+import getopt
+
+
+bd = BookData('data/issuu_full.json')
+dt = bd.build_data_frame()
+
+
+def task_2(uuid):
+    """Perform task from task 3 """
+    bs = BookAnalysis(dt)
+    try:
+        # By Countries
+        result_countries = bs.counries_by_book(uuid)
+        print("Views by country and Document UUID")
+        print(result_countries)
+        bs.counries_by_book_plot(result_countries, uuid)
+        # By Continent
+        print("Views by continet and Document UUID")
+        result_continent = bs.continent_by_book(result_countries, uuid)
+        bs.continet_by_book_plot(result_continent, uuid)
+        print(result_continent)
+    except Exception, err:
+        print(str(err))
+
+
+def task_3():
+    """Perform task from task 3 """
+    ba = BrowserAnalysis(dt)
+    try:
+        ba.browser_usage_plot()
+        ba.general_usage_plot()
+    except Exception, err:
+        print(str(err))
+
+
+def task_4(number):
+    """Perform task from task 4 """
+    ra = UserAnalysis(dt)
+    try:
+        readers_data = ra.best_readers_data(number)
+        print(readers_data)
+    except Exception, err:
+        print(str(err))
+
+
+def task_5(user_uuid, book_uuid):
+    ra = UserAnalysis(dt)
+    try:
+        user_books_alike = ra.user_visitors_alike(user_uuid)
+        print("Similar users based on common book")
+        print(user_books_alike)
+        user_book_alike_sorted = ra.users_alike_sorted(user_uuid, ra.sorter)
+        print("Similar users sorted by readership")
+        print(user_book_alike_sorted)
+
+        visitors_books_alike = ra.book_visitors_alike(book_uuid)
+        print("Similar books based on user reader")
+        print(visitors_books_alike)
+        book_alike_sorted = ra.book_alike_sorted(book_uuid, ra.sorter)
+        print("Sorted books alike by readership")
+        print(book_alike_sorted)
+    except Exception, err:
+        print(str(err))
+
+
+def main(argv):
+    user_uuid = ''
+    doc_uuid = ''
+    task_id = 0
+    try:
+        opts, args = getopt.getopt(argv, "hu:d:t:", ["user_uuid=", "doc_uuid=", "task_id="])
+    except getopt.GetoptError:
+        print 'cw2 -u <user_uuid> -d <doc_uuid> -t <task_id>'
+        sys.exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print 'cw2.py -u <user_uuid> -d <doc_uuid> -t <task_id>'
+            sys.exit()
+        elif opt in ("-u", "--user_uuid"):
+            user_uuid = arg
+        elif opt in ("-d", "--doc_uuid"):
+            doc_uuid = arg
+        elif opt in ("-t", "--task_id"):
+            task_id = arg
+    if(int(task_id) == 1):
+        with open("../requirements.txt", 'r') as fin:
+            print("Requirments.txt file content")
+            print fin.read()
+    if(int(task_id) == 2):
+        if(doc_uuid == ''):
+            print(" No doc_uuid supplied")
+        else:
+            task_2(doc_uuid)
+            print("Histograms for per country beed saved in : static/results/countries_to_book_UUID.png")
+            print("Histograms for per continent beed saved in : static/results/continent_to_book_UUI.png")
+    elif(int(task_id) == 3):
+        task_3()
+        print("Histograms of browser usage has been seaved in 'static/results/simple_browser_usage.png' ")
+        print("Histograms of generalised browser usage has been seaved in 'static/results/general_browser_usage.png")
+    elif(int(task_id) == 4):
+        print("Data of 10 most active readers")
+        task_4(10)
+    elif(int(task_id) == 5):
+        if((user_uuid == '') | (doc_uuid == '')):
+            print("Provide user_uuid or/and doc_uuid")
+            # 938601f24509a9f1 , 110727005030-000000009cca70787e5fba1fda005c85
+        else:
+            task_5(user_uuid, doc_uuid)
+
+
+if __name__ == "__main__":
+    main(sys.argv[1:])

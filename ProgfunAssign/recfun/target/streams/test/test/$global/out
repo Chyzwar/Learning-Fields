@@ -1,0 +1,9 @@
+[debug] Running Test recfun.PascalSuite : subclass(false, org.scalatest.Suite) with arguments 
+[debug] Running Test recfun.BalanceSuite : subclass(false, org.scalatest.Suite) with arguments 
+[debug] Running Test recfun.CountChangeSuite : subclass(false, org.scalatest.Suite) with arguments 
+[error] Failed: : Total 11, Failed 11, Errors 0, Passed 0, Skipped 0
+[error] Failed tests:
+[error] 	recfun.BalanceSuite
+[error] 	recfun.PascalSuite
+[error] 	recfun.CountChangeSuite
+[error] (assignment/test:test) sbt.TestsFailedException: Tests unsuccessful

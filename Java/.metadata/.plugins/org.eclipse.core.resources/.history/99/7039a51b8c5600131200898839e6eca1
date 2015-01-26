@@ -1,0 +1,72 @@
+
+
+abstract public class Competitor  implements Comparable<Competitor>
+{
+	private int id;
+    protected Name competitorName;
+    protected int[] listOfScores ;
+
+    
+    
+    public Competitor(int id,Name competitorName,int [] listOfScores)
+    {
+    	this.id = id;
+    	this.competitorName= competitorName;
+    	this.listOfScores = listOfScores;
+    }
+    
+    
+   /**Abstract method for getOverallScore() 
+    * all subclasses need to have getOverallScore methods
+    * @return corresponding methods in subclasses return double
+    */
+    public abstract double getOverallScore();
+    
+    //Abstract for FullDetails, we have different attributes with is affecting this method
+    public abstract String getFullDetails();
+   
+    //method to get id
+	public int getId() 
+	{  
+	return id; 
+	}
+	
+    /**
+     * Compare this Staff object against another, for the purpose
+     * of sorting. The fields are compared by id ints.
+     * @param otherDetails The details to be compared against.
+     * @return the value 0 if x == y; a value less than 0 if x < y; and a value greater than 0 if x > y
+     */
+    public int compareTo(Competitor otherDetails)
+    {
+        return  Integer.valueOf(id).compareTo(otherDetails.getId());
+    }    
+    
+	/**return full name from Name object 
+	 * 
+	 * @return Full name as String
+	 */
+	public String getName() 
+	{
+		return competitorName.getFullName(); 
+	}
+	
+	// return ListOfScores as [] int
+	public int[] getListOfScores()
+	{	
+	return listOfScores;
+	}
+	
+	//method create short report on competitor
+	public String getShortDetails()
+	{
+		int competitorNumber= getId();
+		String shortDetails = "Short details for " + competitorNumber + ":\r\nCN " + competitorNumber + " (" + competitorName.getShortName() + ") has overall score " + getOverallScore();
+		return shortDetails;
+	}
+	
+	public void setScores(int[] scores)
+	{
+		listOfScores = scores;
+	}
+}

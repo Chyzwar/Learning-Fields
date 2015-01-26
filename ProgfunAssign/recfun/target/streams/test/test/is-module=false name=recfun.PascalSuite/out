@@ -1,0 +1,40 @@
+[info] PascalSuite:
+[info] - pascal: col=0,row=2 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.pascal(Main.scala:17)
+[info]   at recfun.PascalSuite$$anonfun$1.apply$mcV$sp(PascalSuite.scala:12)
+[info]   at recfun.PascalSuite$$anonfun$1.apply(PascalSuite.scala:12)
+[info]   at recfun.PascalSuite$$anonfun$1.apply(PascalSuite.scala:12)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.PascalSuite.withFixture(PascalSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
+[info] - pascal: col=1,row=2 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.pascal(Main.scala:17)
+[info]   at recfun.PascalSuite$$anonfun$2.apply$mcV$sp(PascalSuite.scala:16)
+[info]   at recfun.PascalSuite$$anonfun$2.apply(PascalSuite.scala:16)
+[info]   at recfun.PascalSuite$$anonfun$2.apply(PascalSuite.scala:16)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.PascalSuite.withFixture(PascalSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
+[info] - pascal: col=1,row=3 *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.pascal(Main.scala:17)
+[info]   at recfun.PascalSuite$$anonfun$3.apply$mcV$sp(PascalSuite.scala:20)
+[info]   at recfun.PascalSuite$$anonfun$3.apply(PascalSuite.scala:20)
+[info]   at recfun.PascalSuite$$anonfun$3.apply(PascalSuite.scala:20)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.PascalSuite.withFixture(PascalSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...

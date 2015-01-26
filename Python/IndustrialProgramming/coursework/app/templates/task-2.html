@@ -1,0 +1,33 @@
+{% extends "layout.html" %} {% block content %}
+
+<div class="intro">
+	<h1 class="text-center">Task 2. Views by country/continent</h1>
+	<h2 class="text-center">Choose book by UUID</h2>
+</div>
+
+<div class="input-wrapper">
+    <div class="row">
+        <div class="form-group col-md-10">
+            <label for="inputUUID" class="control-label col-xs-4">Book UUID</label>
+            <div class="col-xs-8">
+                <input type="text" class="form-control" id="input-uuid" placeholder="Book UUID">
+            </div>
+        </div>
+        <div class="form-group col-md-2">
+            <button type="submit" class="btn btn-default btn-info center-block" id="submit-uuid">Submit</button>
+        </div>
+    </div>
+    <div id="error-message-uuid"></div>
+</div>
+
+<div class="image-wrap">
+	<h2 class="text-center">a) Popularity of Document by Country</h2>
+	<img src="" alt="" id="book-country-plot" class="center-block image-ajax" >
+</div>
+
+
+<div class="image-wrap">
+	<h2 class="text-center">a) Popularity of Document by Continent</h2>
+	<img src="" alt="" id="book-continent-plot" class="center-block image-ajax" >
+</div>
+{% endblock %}

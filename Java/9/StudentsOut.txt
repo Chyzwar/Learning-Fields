@@ -1,0 +1,6 @@
+The report
+0011  Helen Scott    1   MIC   ARA   
+1234  James Jackson  1   MIC   FAC1   
+0267  Tim Moore      2   ARA   FAC1   FAC2   
+1356  Tom Smith      2   
+3434  Mary Brown     3   FAC1   ARA   JBB   FAC2   

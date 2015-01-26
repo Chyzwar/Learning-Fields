@@ -1,0 +1,119 @@
+public class Name 
+{
+  private String partOne = "";
+  private String partTwo = "";
+  private String partThree = "";
+  private String partFour = "";
+  private String partFive = "";
+  private String fullName = "";
+//take full name from file
+  public Name (String fullName) 
+  {
+	  this.fullName = fullName;
+  }
+ public int getCount()
+  {
+// Count number of parts in team names
+	  int position = 0;
+	  int count = 0;
+	  	if (fullName.contains(" "))
+	  	{
+	  		while (fullName.indexOf(" ",position) != fullName.length()) 
+	  		{
+	  		position = fullName.indexOf(" ",position)+1;
+	  		count ++;
+	  		} 
+	  	}
+	  //quick check if there is a name
+	  if (fullName.length() == 0) 
+	  {
+		  count = -1;
+	  }
+	  
+	 return count;
+  }
+ 
+public void getParts()
+{
+	
+	int counts = getCount();
+// I understand that using case solution is not the "smartest" way but for now this will ok.
+    switch (counts)
+    		{
+          case -1:  System.out.println("No name was supplied");
+                
+          case  0:  partOne = fullName;
+          
+          case  1:  {
+        	  		int spacePos1 = fullName.indexOf(' ');
+        	  		partOne = fullName.substring(0, spacePos1);
+        	  		partTwo =fullName.substring(spacePos1, fullName.length());
+          			}
+          case 2: {
+        	  		int spacePos1 = fullName.indexOf(' ');
+        	  		partOne = fullName.substring(0, spacePos1);
+        	  		int spacePos2 = fullName.indexOf(' ',spacePos1+1);
+        	  		partTwo =fullName.substring(spacePos1, spacePos2);
+        	  		partThree = fullName.substring(spacePos2, fullName.length());
+          			}
+          case 3:  {
+        	  		int spacePos1 = fullName.indexOf(' ');
+        	  		partOne = fullName.substring(0, spacePos1);
+  	  				int spacePos2 = fullName.indexOf(' ',spacePos1+1);
+  	  				partTwo =fullName.substring(spacePos1, spacePos2);
+  	  				int spacePos3 = fullName.indexOf(' ',spacePos2+1);
+  	  				partThree = fullName.substring(spacePos2, spacePos3);
+  	  				partFour = fullName.substring(spacePos3, fullName.length());
+          			}
+          case 4:   {
+        	  		int spacePos1 = fullName.indexOf(' ');
+        	  		partOne = fullName.substring(0, spacePos1);
+        	  		int spacePos2 = fullName.indexOf(' ',spacePos1+1);
+        	  		partTwo =fullName.substring(spacePos1, spacePos2);
+        	  		int spacePos3 = fullName.indexOf(' ',spacePos2+1);
+        	  		partThree = fullName.substring(spacePos2, spacePos3);
+        	  		int spacePos4 = fullName.indexOf(' ',spacePos3+1);
+        	  		partFour = fullName.substring(spacePos3, spacePos4);
+        	  		partFive = fullName.substring(spacePos4, fullName.length());
+        	  		break;
+          			}
+          default:  System.out.println("Name was too long");
+          			break;
+    		}
+    	}
+         			
+    
+
+  //method return full name of team
+public String getFullName() 
+{
+return fullName;
+}
+//return a inicials of team
+public String getShortName()
+{
+	getParts();
+String shorts = "";
+	if (partOne !="")
+	{
+		shorts+=partOne.substring(0);
+	}
+	if (partTwo!="")
+	{
+		shorts+=partTwo.substring(0);
+	}
+	if(partThree!="")
+	{
+		shorts+=partThree.substring(0);
+	}
+	if(partFour!="")	
+	{
+		shorts+=partFour.substring(0);
+	}
+	if(partFive!="")
+	{
+	shorts+=partFive.substring(0);
+	}
+return shorts;
+}
+}

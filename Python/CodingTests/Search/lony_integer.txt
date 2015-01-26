@@ -1,0 +1,12 @@
+import sys
+
+def lonelyinteger(input):
+    lists = list(input)
+    answer = [x for x in lists if lists.count(x) == 1 ]
+    return answer[0]
+
+# Tail starts here
+if __name__ == '__main__':
+    a = int(input())
+    b = map(int, input().strip().split(" "))
+    print(lonelyinteger(b))

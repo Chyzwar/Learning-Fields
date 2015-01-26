@@ -1,0 +1,41 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+/**
+ * This class creates a list of competitors, and uses  the CompetitorList class to write a full report to a file
+ * @author Group
+ *
+ */
+public class CompetitionManager
+{
+	private CompetitorList allCompetitors;
+	
+	
+	/**
+	 * The constructor creates a list of competitors based on the list gotten from the CompetitorList class
+	 */
+	public CompetitionManager()
+	{
+		allCompetitors = new CompetitorList();
+		//our last problem could be beacuse Stian gui start there
+		
+	}
+	
+	/**Method call for GUI and CompetitorList also methods to read from files
+	 * 
+	*/
+	
+	public void run()
+	{
+	
+		allCompetitors.readAllFiles();
+	
+		StartGUI s = new StartGUI(allCompetitors);
+	    s.setVisible(true);
+	}
+	
+
+	
+	
+	
+}

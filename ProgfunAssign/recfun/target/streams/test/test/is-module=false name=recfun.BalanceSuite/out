@@ -1,0 +1,53 @@
+[info] BalanceSuite:
+[info] - balance: '(if (zero? x) max (/ 1 x))' is balanced *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.balance(Main.scala:22)
+[info]   at recfun.BalanceSuite$$anonfun$1.apply$mcV$sp(BalanceSuite.scala:13)
+[info]   at recfun.BalanceSuite$$anonfun$1.apply(BalanceSuite.scala:13)
+[info]   at recfun.BalanceSuite$$anonfun$1.apply(BalanceSuite.scala:13)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.BalanceSuite.withFixture(BalanceSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
+[info] - balance: 'I told him ...' is balanced *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.balance(Main.scala:22)
+[info]   at recfun.BalanceSuite$$anonfun$2.apply$mcV$sp(BalanceSuite.scala:17)
+[info]   at recfun.BalanceSuite$$anonfun$2.apply(BalanceSuite.scala:17)
+[info]   at recfun.BalanceSuite$$anonfun$2.apply(BalanceSuite.scala:17)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.BalanceSuite.withFixture(BalanceSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
+[info] - balance: ':-)' is unbalanced *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.balance(Main.scala:22)
+[info]   at recfun.BalanceSuite$$anonfun$3.apply$mcV$sp(BalanceSuite.scala:21)
+[info]   at recfun.BalanceSuite$$anonfun$3.apply(BalanceSuite.scala:21)
+[info]   at recfun.BalanceSuite$$anonfun$3.apply(BalanceSuite.scala:21)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.BalanceSuite.withFixture(BalanceSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
+[info] - balance: counting is not enough *** FAILED ***
+[info]   scala.NotImplementedError: an implementation is missing
+[info]   at scala.Predef$.$qmark$qmark$qmark(Predef.scala:252)
+[info]   at recfun.Main$.balance(Main.scala:22)
+[info]   at recfun.BalanceSuite$$anonfun$4.apply$mcV$sp(BalanceSuite.scala:25)
+[info]   at recfun.BalanceSuite$$anonfun$4.apply(BalanceSuite.scala:25)
+[info]   at recfun.BalanceSuite$$anonfun$4.apply(BalanceSuite.scala:25)
+[info]   at org.scalatest.FunSuite$$anon$1.apply(FunSuite.scala:1265)
+[info]   at org.scalatest.Suite$class.withFixture(Suite.scala:1974)
+[info]   at recfun.BalanceSuite.withFixture(BalanceSuite.scala:9)
+[info]   at org.scalatest.FunSuite$class.invokeWithFixture$1(FunSuite.scala:1262)
+[info]   at org.scalatest.FunSuite$$anonfun$runTest$1.apply(FunSuite.scala:1271)
+[info]   ...
