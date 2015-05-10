@@ -23,6 +23,7 @@
         <div className="container">
           <h1>Hello, World</h1>
           <SubMessage />
+          <SubMessage />
         </div>
       );
     }
@@ -32,8 +33,11 @@
     render: function() {
       return React.DOM.div(
         { className: 'container '},
+        // First param of h1 is properties
         React.DOM.h1(null, 'Hello, World'),
-        SubMessage(null)
+
+        //Third param is array of sub compnets
+        [SubMessage(null), SubMessage(null)]
       );
     }
   });

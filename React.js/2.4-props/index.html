@@ -26,6 +26,9 @@
    http://facebook.github.io/react/docs/reusable-components.html
    */
 
+  'use strict';
+
+  // MessgaeBox is also owner, because it sets props for subcomponents
   var MessageBox = React.createClass({
 
     getInitialState: function () {
@@ -43,6 +46,7 @@
 
     render: function() {
 
+      //Create array of subcomponents
       var messages = this.state.messages.map(function(message) {
         return <SubMessage message={message} />
       });
@@ -51,18 +55,26 @@
         display: this.state.isVisible ? 'block' : 'none'
       };
 
+      var SubMessageString = "Messgae to subcomponents";
+
       return (
         <div className="container jumbotron" style={inlineStyle}>
           <h2>Hello, World</h2>
 
+          <h1> { this.props.titleMessage } </h1>
           { messages }
+
+          <SubMessage message={SubMessageString} />
         </div>
       );
     }
   });
 
+
+
   var SubMessage = React.createClass({
 
+    //Define proptypes and validatioon, required and is string
     propTypes: {
       message: React.PropTypes.string.isRequired
     },
@@ -80,8 +92,10 @@
     }
   });
 
+  var propsMessage= "Message via props";
+
   var reactComponent = React.renderComponent(
-    <MessageBox />,
+    <MessageBox titleMessage={propsMessage} />,
     document.getElementById('app')
   );
 

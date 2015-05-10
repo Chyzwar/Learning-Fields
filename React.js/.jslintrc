@@ -1,0 +1,11 @@
+{
+    "evil":false,
+    "indent":4,
+    "vars": true,
+    "passfail":false,
+    "plusplus":false,
+    "predef": "module,require,React",
+	"global" : "module,require,React",
+	"nomen" : true, 
+	"node": true
+}
