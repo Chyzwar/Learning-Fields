@@ -25,7 +25,7 @@
                            :optimizations :whitespace
 
                            ;; generated JS code prettyfication
-                           :pretty-print true}}]})
+                           :pretty-print false}}]})
 
   
 
