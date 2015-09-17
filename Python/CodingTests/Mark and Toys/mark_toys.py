@@ -27,3 +27,4 @@ def max_toys(K, items):
 
 
 print(max_toys(K, items))
+

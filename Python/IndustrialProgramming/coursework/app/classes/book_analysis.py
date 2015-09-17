@@ -45,7 +45,7 @@ class BookAnalysis:
             else:
                 by_continent[continent] = value
         return by_continent
-
+        
     def continet_by_book_plot(self, by_continent, UUID):
         by_continent_data = pd.Series(by_continent.values(), by_continent.keys())
         by_continent_data.plot(kind='bar')
