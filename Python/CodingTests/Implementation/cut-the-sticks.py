@@ -38,3 +38,4 @@ cut_the_sticks(items_int)
 
 for x in shortening_list:
     print(x)
+    

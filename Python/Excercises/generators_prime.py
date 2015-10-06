@@ -1,4 +1,5 @@
 from math import sqrt
+
 # https://www.jeffknupp.com/blog/2013/04/07/improve-your-python-yield-and-generators-explained/
 
 

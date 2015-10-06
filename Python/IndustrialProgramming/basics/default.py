@@ -1,4 +1,4 @@
-#!/bin/env python
+#!/bin/env pythona
 
 i = 5
 def f(arg=i):
@@ -6,4 +6,5 @@ def f(arg=i):
 
 i = 6
 f()
+
 

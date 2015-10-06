@@ -14,9 +14,8 @@ def is_paragram(string):
             is_para = False
             break
 
-    if is_para == False:
+    if is_para is False:
         print("not pangram")
-
     else:
         print("pangram")
 
