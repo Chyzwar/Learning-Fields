@@ -1,0 +1,152 @@
+(-main)
+(+ 1 2 3 4)
+(first [1 2 3 4])
+clojure.repl
+(first [1 2 3 4])
+(+ 2 2)
+1
+"a fuckig string?"
+"a fuckig string?
+(+ 2 2 2)
+(binding [*ns* (or (find-ns 'first-app.core) (find-ns 'user))] (load-string "(defn -main
+  \"I don't do a whole lot ... yet.\"
+  [& args]
+  (println \"Hello, World! Marcin\"))"))
+(-main)
+(+)
+(+
+)
+(-main)
+2.2
+(+
+2)
+if( 2 )
+(if 2 )
+(if true)
+ (if true)
+repl_clear
+(+ 2)
+(+ 
+2)
+(if 2
+"abra chuja catabra")
+(if 2
+"abra chuja catabra"
+"huja muja dzikie weze")
+(if 2
+(do ( println "abra chuja catabra")
+"catabra")
+(do (println "dziwki i uscze"))
+"huja muja dzikie weze")
+(if 2
+(do ( println "abra chuja catabra")
+"catabra")
+(do (println "dziwki i uscze"))
+"huja muja dzikie weze"))
+(if 2
+(do ( println "abra chuja catabra")
+"catabra")
+(do (println "dziwki i uscze")
+"huja muja dzikie weze"))
+(if "2"
+(do ( println "abra chuja catabra")
+"catabra")
+(do (println "dziwki i uscze")
+"huja muja dzikie weze"))
+(if false
+(do ( println "abra chuja catabra")
+"catabra")
+(do (println "dziwki i uscze")
+"huja muja dzikie weze"))
+(def failde-pr )
+(def failde-pr 
+)
+(def failde-pr 
+["chuj wielki" "chuj wielki dwea"])
+(def failde-pr 
+["chuj wielki" "chuj wielki dwea"])
+(def failde-pr 
+["chuj wielki" "chuj wielki dwea"])
+(def failde-pr 
+["chuj wielki"
+ "chuj wielki dwea"])
+(def failde-pr 
+["chuj wielki"
+ "chuj wielki dwea"])
+(-failde-pr)
+(def failde-pr 
+["chuj wielki"
+ "chuj wielki dwea"])
+failde-pr
+(= 2)
+(= 2 2)
+(= 2 1)
+(= "chuj" "chuj")
+(= "chuj" "chuj2")
+(= "chuj" "chuj" "chuj")
+(= "chuj" "chuj" "chu")
+(true = (= "chuj" "chuj" "chu")) 
+(= true (= "chuj" "chuj" "chu"))
+(= true (= "chuj" "chuj" "chuj"))
+1/2
+"Lord Voldemort"
+"\"He who must not be named\""
+"\"Great cow of Moscow!\" - Hermes Conrad"
+"Lord Voldemort"
+(. System exit 0)
+(get-in {:a 0 :b {:c "ho hum"}} [:b :c])
+(get-in {:a 0 :b {:c "ho hum"}} [:b])
+(get-in {:a 0 :b {:c "ho hum"}} :b)
+(get {:a 0 :b {:c "ho hum"}} :b)
+(:a {:a 1 :b 2 :c 3})
+(:b {:a 1 :b 2 :c 3})
+(hash-map :a 1 :b 2)
+({:a 1 :b 2})
+({:a 1 
+:b 2})
+{:a 1 :b 2}
+[2 3 4]
+(1 [2 3 4])
+(:1 [2 3 4])
+(: [2 3 4])
+(get [2 3 4] 1)
+(conj [2 3 4] 1)
+(conj {2: 3 2: 4} 1)
+(conj {:2 3 :2 4} 1)
+(conj {:2 3 :2 4} {:2 1})
+(conj {:2 3 :2 4} {:7 1})
+(conj {:2 3 :8 4} {:7 1})
+'(2 3 4)
+(get '(2 3 4)2 )
+(get '(2 3 4) 2)
+(nth '(2 3 4) 2)
+(list 2 3 4)
+#{"hannah montanna" "miley cyrus" 20 45}
+(conj #{:a :b} :b)
+(def failed-movie-titles ["Gone With the Moving Air" "Swellfellas"])
+failed-movie-titles
+(first failed-protagonist-names)
+(def failed-movie-titles ["Gone With the Moving Air" "Swellfellas"])
+'failed-movie-titles
+(first ['failed-protagonist-names 'failed-antagonist-names])
+(defn too-enthusiastic
+  "Return a cheer that might be a bit too enthusiastic"
+  [name]
+  (str "OH. MY. GOD! " name " YOU ARE MOST DEFINITELY LIKE THE BEST "
+  "MAN SLASH WOMAN EVER I LOVE YOU AND WE SHOULD RUN AWAY TO SOMEWHERE"))
+(too-enthusiastic Maricn)
+(too-enthusiastic "Maricn")
+(too-enthusiastic ["marcin" "jowita"])
+(too-enthusiastic 'marcin)
+(def marcin "marcin")
+marcin
+(too-enthusiastic 'marcin)
+(doc map)
+(too-enthusiastic 'marcin)
+(. System exit 0)
+(+ 2 2 )
+(min [1 4 6])
+(sort [6 1 4 6])
+(in-ns 'cheese.analysis)
+(ns-map *ns*)
+(. System exit 0)
