@@ -7,7 +7,7 @@ class StandardClient(Client):
 
     def __init__(self, client_id, call_plan, client_type):
         super(StandardClient, self).__init__(client_id, call_plan)
-        self.client_type = client_type
+        self.__client_type = client_type
 
     def call_cost(self, call):
         """Calcucalte Cost of call"""
@@ -24,7 +24,7 @@ class StandardClient(Client):
             print 'I got a KeyError - reason "%s"' % str(e)
 
     def per_minute(self, call_type):
-        "Calculate per minute cost base cost"
+        "Calculate per minute base cost"
         try:
             per_minute = self.call_plan.plan_tariffs[call_type]
 
@@ -32,3 +32,11 @@ class StandardClient(Client):
 
         except KeyError, e:
             print 'I got a KeyError - reason "%s"' % str(e)
+
+    @property
+    def client_type(self):
+        return self.__client_type
+
+    @client_type.setter
+    def call_type(self, value):
+        self.__client_type = value

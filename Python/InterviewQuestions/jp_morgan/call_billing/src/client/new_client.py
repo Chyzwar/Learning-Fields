@@ -7,7 +7,7 @@ class NewClient(Client):
 
     def __init__(self, client_id, call_plan, client_type):
         super(NewClient, self).__init__(client_id, call_plan)
-        self.client_type = client_type
+        self.__client_type = client_type
 
     def call_cost(self, call):
         """Calculate total cost of call"""
@@ -36,3 +36,11 @@ class NewClient(Client):
 
         except KeyError, e:
             print 'I got a KeyError - reason "%s"' % str(e)
+
+    @property
+    def client_type(self):
+        return self.__client_type
+
+    @client_type.setter
+    def call_type(self, value):
+        self.__client_type = value

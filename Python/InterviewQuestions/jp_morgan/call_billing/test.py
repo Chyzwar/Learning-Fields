@@ -67,5 +67,6 @@ for client in client_list:
 
     # produce billing
     client_bill = client_billing.make_billing(client, call_history)
+    print("\n\r")
     print("Total for client_id: " +
           str(client.client_id) + " is " + str(client_bill))
