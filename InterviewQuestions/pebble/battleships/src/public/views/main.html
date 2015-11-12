@@ -1,0 +1,17 @@
+
+<header>
+	<h1>BattleShips Mega Game</h1>
+	<button class="md-button" (click)="reset()">reset</button>
+</header>
+
+<main>
+	<grid
+		[grid]="game.grid"
+		(select)="game.play($event)">
+	</grid>
+</main>
+
+<footer>
+	made by: Marcin Kopacz, schizek.marcin@gmail.com
+</footer>
+

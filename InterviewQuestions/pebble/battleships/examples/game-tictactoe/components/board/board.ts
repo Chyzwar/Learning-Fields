@@ -9,7 +9,7 @@ import {Component, EventEmitter, CORE_DIRECTIVES} from 'angular2/angular2';
   outputs:  [ 'select' ],
   directives: [ CORE_DIRECTIVES ],
   styles: [
-    require('./board.css') // webpack require
+    require('./board.css') 
   ],
   template:`
     <div class="board">
@@ -19,6 +19,7 @@ import {Component, EventEmitter, CORE_DIRECTIVES} from 'angular2/angular2';
                [class.x]="tile=='x'"
                [class.o]="tile=='o'"
                (click)="select.next({x: x, y: y})">
+               {{tile.isHit}}
           </div>
         </div>
       </div>
