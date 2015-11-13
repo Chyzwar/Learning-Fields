@@ -14,8 +14,20 @@
 		</grid>
 	</div>
 
+	<div *ng-if="game.hasWon == true && game.ammo == 0">
+		 <h1>You had won the game</h1>
+
+		<button class="center btn" (click)="reset()">
+			<h1> Play Again</h1>
+		<button>
+	</div>
+
 	<div *ng-if="game.hasWon == false">
-		<button class="md-button" (click)="reset()">reset<button>
+		<img class="center" src="img/lost.jpg" alt="">
+
+		<button class="center btn" (click)="reset()">
+			<h1> Play Again</h1>
+		<button>
 	</div>
 </main>
 

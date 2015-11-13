@@ -2,7 +2,7 @@
 
 import {provide, Injectable} from 'angular2/angular2';
 
-const ammo = 40;
+const ammo = 35;
 const dimensions = { x: 10, y: 10 };
 const initialFleet = [
   { type: 'Destroyer', count: 2, size: 5 },
@@ -154,7 +154,7 @@ export class GameService {
     this.ammo -= 1;
     this.grid[coord.x][coord.y].isHit = true;
 
-    if (ammo === 0) {
+    if (this.ammo === 0) {
       this.grid.forEach(
         row => {
           row.forEach(area => {

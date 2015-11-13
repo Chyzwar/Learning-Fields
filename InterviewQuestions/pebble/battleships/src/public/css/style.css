@@ -7,3 +7,11 @@ body {
   font-family: "Treamd";
   font-size: 150%;
 }
+
+.center{
+	display: block;
+    margin: 0 auto;
+}
+.btn{
+	margin-top: 15px;
+}
