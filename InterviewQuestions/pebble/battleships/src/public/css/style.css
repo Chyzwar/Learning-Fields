@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Treamd";
+  src: url("../fonts/Treamd.ttf") format("truetype");
+}
+
+body {
+  font-family: "Treamd";
+  font-size: 150%;
+}

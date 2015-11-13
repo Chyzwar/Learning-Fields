@@ -1,15 +1,22 @@
 
 <header>
 	<h1>BattleShips Mega Game</h1>
-	<button class="md-button" (click)="reset()">reset</button>
+
+
 	<h1>Ammo {{game.ammo}}</h1>
 </header>
 
 <main>
-	<grid
-		[grid]="game.grid"
-		(select)="game.play($event)">
-	</grid>
+	<div *ng-if="game.hasWon == true">
+		<grid
+			[grid]="game.grid"
+			(select)="game.play($event)">
+		</grid>
+	</div>
+
+	<div *ng-if="game.hasWon == false">
+		<button class="md-button" (click)="reset()">reset<button>
+	</div>
 </main>
 
 <footer>

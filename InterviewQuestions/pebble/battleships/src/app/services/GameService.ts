@@ -20,6 +20,7 @@ export class GameService {
   fleet: Ship[];
   plays: Point[];
   ammo: number;
+  hasWon: boolean;
 
   constructor() {
     this.grid = this.initGrid(
@@ -31,6 +32,7 @@ export class GameService {
       initialFleet
     );
     this.ammo = ammo;
+    this.hasWon = true;
   }
 
   private initFleet(initialFleet: any): Ship[] {
@@ -152,8 +154,16 @@ export class GameService {
     this.ammo -= 1;
     this.grid[coord.x][coord.y].isHit = true;
 
-    if(ammo === 0){
-      
+    if (ammo === 0) {
+      this.grid.forEach(
+        row => {
+          row.forEach(area => {
+            if (area.hasShip && !area.isHit)
+              this.hasWon = false;
+          }
+          );
+        }
+      );
     }
   }
 }
