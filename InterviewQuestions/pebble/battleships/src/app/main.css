@@ -2,6 +2,15 @@
   width: 100%;
 }
 
+@font-face {
+  font-family: "Treamd";
+  src: url("./fonts/Treamd.ttf") format("truetype");
+}
+
+body {
+  font-family: "Treamd";
+}
+
 main, header {
   width: 100%;
   margin-left: auto;

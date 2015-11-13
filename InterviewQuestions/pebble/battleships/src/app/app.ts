@@ -35,7 +35,6 @@ export class App{
   }
 
   reset() {
-    this.game.dispose();
     this.game = GameService.create();
   }
 }

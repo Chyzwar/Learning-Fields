@@ -20,8 +20,9 @@ import {Component, CORE_DIRECTIVES, EventEmitter} from 'angular2/angular2';
       <div *ng-for="#row of grid; #x=index" class="row">
         <div *ng-for="#tile of row; #y=index">
           <div class="tile"
-               [class.x]="tile.isHit==true"
+               [class.x]="tile.isHit==true &&tile.hasShip==false"
                [class.o]="tile.isHit==false"
+               [class.hit]="tile.isHit==true && tile.hasShip==true"
                (click)="select.next({x: x, y: y})">
           </div>
         </div>
