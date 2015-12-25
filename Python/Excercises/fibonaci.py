@@ -16,8 +16,6 @@ def fib_rec(n):
 print(fib_rec(3))
 
 
-
-
 def memoize(fn, arg):
     memo = {}
     if arg not in memo:

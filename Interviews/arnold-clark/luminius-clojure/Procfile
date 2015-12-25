@@ -1,0 +1,1 @@
+web: java $JVM_OPTS -cp target/luminius-clojure.jar clojure.main -m luminius-clojure.core

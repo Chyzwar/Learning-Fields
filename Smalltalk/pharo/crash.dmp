@@ -1,0 +1,361 @@
+
+Segmentation fault Sat Dec  5 19:45:19 2015
+
+
+/home/raziel/MyProjects/pharo/pharo-vm/pharo
+pharo VM version: 3.9-7 #1 Thu Apr  2 00:51:45 CEST 2015 gcc 4.6.3 [Production ITHB VM]
+Built from: NBCoInterpreter NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+With: NBCogit NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+Revision: https://github.com/pharo-project/pharo-vm.git Commit: 32d18ba0f2db9bee7f3bdbf16bdb24fe4801cfc5 Date: 2015-03-24 11:08:14 +0100 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14904
+Build host: Linux pharo-linux 3.2.0-31-generic-pae #50-Ubuntu SMP Fri Sep 7 16:39:45 UTC 2012 i686 i686 i386 GNU/Linux
+plugin path: /home/raziel/MyProjects/pharo/pharo-vm/ [default: /home/raziel/MyProjects/pharo/pharo-vm/]
+
+
+C stack backtrace & registers:
+	eax 0xffc3f324 ebx 0xffc3f240 ecx 0xffc3f2d8 edx 0xffc3f28c
+	edi 0xffc3f110 esi 0xffc3f110 ebp 0xffc3f1a8 esp 0xffc3f1f4
+	eip 0xffc3f408
+*[0xffc3f408]
+/home/raziel/MyProjects/pharo/pharo-vm/pharo[0x80a33a2]
+/home/raziel/MyProjects/pharo/pharo-vm/pharo[0x80a36f3]
+[0xf76f9b80]
+[0xd5074004]
+[0xb4b73648]
+[0x82ede68]
+
+
+Smalltalk stack dump:
+0xffcd745c M Continuation>initializeFromContext: 0xba3e7754: a(n) Continuation
+0xffc502b4 I Continuation class>fromContext: 0xb5030ae8: a(n) Continuation class
+0xffc502dc I Continuation class>currentDo: 0xb5030ae8: a(n) Continuation class
+0xffc50300 I ContinuationTest>callcc: 0xb72d639c: a(n) ContinuationTest
+0xffc50320 M ContinuationTest>testBlockEscape 0xb72d639c: a(n) ContinuationTest
+0xffc50338 M ContinuationTest(TestCase)>performTest 0xb72d639c: a(n) ContinuationTest
+0xffc50350 M [] in ContinuationTest(TestCase)>runCase 0xb72d639c: a(n) ContinuationTest
+0xffc50370 M BlockClosure>ensure: 0xba3e75f8: a(n) BlockClosure
+0xffc5038c M ContinuationTest(TestCase)>runCase 0xb72d639c: a(n) ContinuationTest
+0xffc503a8 M [] in TestResult>runCase: 0xb7272b98: a(n) TestResult
+0xffc503c0 M BlockClosure>on:do: 0xba3e7518: a(n) BlockClosure
+0xffc503e0 M TestResult>runCase: 0xb7272b98: a(n) TestResult
+0xffc503fc M ContinuationTest(TestCase)>run: 0xb72d639c: a(n) ContinuationTest
+0xffc5041c M [] in TestSuite>run: 0xb72d6380: a(n) TestSuite
+0xffc50440 M OrderedCollection>do: 0xb72d63b4: a(n) OrderedCollection
+0xffc50460 M [] in TestSuite>run: 0xb72d6380: a(n) TestSuite
+0xffcc0300 M BlockClosure>ensure: 0xba3e73cc: a(n) BlockClosure
+0xffcc031c M TestSuite>run: 0xb72d6380: a(n) TestSuite
+0xffcc0338 M [] in TestRunner>runSuite: 0xb723c2d8: a(n) TestRunner
+0xffcc0358 M BlockClosure>cull:cull: 0xba3e6a84: a(n) BlockClosure
+0xffcc0380 M [] in TestRunner>executeSuite:as: 0xb723c2d8: a(n) TestRunner
+0xffcc03a0 M BlockClosure>ensure: 0xba3e6de8: a(n) BlockClosure
+0xffcc03bc M TestRunner>executeSuite:as: 0xb723c2d8: a(n) TestRunner
+0xffcc03dc M TestRunner>runSuite: 0xb723c2d8: a(n) TestRunner
+0xffcc0400 I [] in TestRunner>runTestSuites: 0xb723c2d8: a(n) TestRunner
+0xffcc0434 M [] in Set(Collection)>do:displayingProgress:every: 0xb72732e8: a(n) Set
+0xffcc045c M Set>do: 0xb72732e8: a(n) Set
+0xb732cf94 s [] in Set(Collection)>do:displayingProgress:every:
+0xb732cf38 s BlockClosure>cull:
+0xb7335cdc s [] in Job>run
+0xb732e11c s BlockClosure>on:do:
+0xb732c454 s [] in Job>run
+0xb7335d38 s BlockClosure>ensure:
+0xb732c378 s Job>run
+0xb732c610 s MorphicUIManager(UIManager)>displayProgress:from:to:during:
+0xb732c66c s ByteString(String)>displayProgressFrom:to:during:
+0xb732c284 s Set(Collection)>do:displayingProgress:every:
+0xb732c6c8 s Set(Collection)>do:displayingProgress:
+0xb732c204 s TestRunner>runTestSuites:
+0xb7272b38 s TestRunner>runAll
+0xb7272adc s [] in TestRunner>runProfiled
+0xb7335d94 s BlockClosure>ensure:
+0xb7272a6c s MessageTally>spyEvery:on:
+0xb7335df0 s MessageTally class>spyOn:reportOtherProcesses:cutoff:openResultWindow:closeAfter:
+0xb7335e4c s MessageTally class>spyOn:reportOtherProcesses:cutoff:
+0xb7335ea8 s MessageTally class>spyOn:reportOtherProcesses:
+0xb7335f04 s MessageTally class>spyOn:
+0xb7272870 s TestRunner>runProfiled
+0xb7335f60 s PluggableButtonMorph>performAction:
+0xb7335fbc s [] in PluggableButtonMorph>mouseUp:
+0xb7272814 s Array(SequenceableCollection)>do:
+0xb72727a4 s PluggableButtonMorph>mouseUp:
+0xb7336018 s PluggableButtonMorph(Morph)>handleMouseUp:
+0xb7336074 s MouseButtonEvent>sentTo:
+0xb73360d0 s PluggableButtonMorph(Morph)>handleEvent:
+0xb733612c s PluggableButtonMorph(Morph)>handleFocusEvent:
+0xb7336188 s [] in HandMorph>sendFocusEvent:to:clear:
+0xb732c3f8 s BlockClosure>on:do:
+0xb7272688 s WorldMorph(PasteUpMorph)>becomeActiveDuring:
+0xb7272610 s HandMorph>sendFocusEvent:to:clear:
+0xb7272700 s HandMorph>sendEvent:focus:clear:
+0xb727259c s HandMorph>sendMouseEvent:
+0xb73361e4 s HandMorph>handleEvent:
+0xb7336240 s HandMorph>processEvents
+0xb733629c s [] in WorldState>doOneCycleNowFor:
+0xb73362f8 s Array(SequenceableCollection)>do:
+0xb7336354 s WorldState>handsDo:
+0xb72724d0 s WorldState>doOneCycleNowFor:
+0xb73363b0 s WorldState>doOneCycleFor:
+0xb733640c s WorldMorph>doOneCycle
+0xb5328048 s [] in MorphicUIManager>(nil)
+0xb5327fec s [] in BlockClosure>(nil)
+
+Most recent primitives
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+new:
+replaceFrom:to:with:startingAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+at:put:
+size
+at:
+at:put:
+at:put:
+instVarAt:
+at:put:
+instVarAt:
+**CompactCode**
+
+stack page bytes 4096 available headroom 3300 minimum unused headroom 1848
+
+	(Segmentation fault)
