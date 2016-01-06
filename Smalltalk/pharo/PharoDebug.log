@@ -1,0 +1,1070 @@
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: Date class>>now
+4 January 2016 10:36:09.104994 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+NBCogit NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+https://github.com/pharo-project/pharo-vm.git Commit: 32d18ba0f2db9bee7f3bdbf16bdb24fe4801cfc5 Date: 2015-03-24 11:08:14 +0100 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14904
+
+Image: Pharo4.0 [Latest update: #40625]
+
+Date class(Object)>>doesNotUnderstand: #now
+	Receiver: Date
+	Arguments and temporary variables: 
+		aMessage: 	now
+		exception: 	MessageNotUnderstood: Date class>>now
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		superclass: 	Timespan
+		methodDict: 	a MethodDictionary(#addDays:->Date>>#addDays: #addMonths:->Date>>#a...etc...
+		format: 	134
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#Date
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection(ChronologyConstants)
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Chronology'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+UndefinedObject>>DoIt
+	Receiver: nil
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+nil
+
+OpalCompiler>>evaluate
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		value: 	nil
+		selectedSource: 	'Date now.'
+		itsSelection: 	a Text for 'Date now.'
+		itsSelectionString: 	'Date now.'
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ Date now
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+RubSmalltalkEditor>>evaluate:andDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aStream: 	a ReadStream
+		aBlock: 	[ :result | aBlock value: result ]
+		result: 	nil
+		rcvr: 	nil
+		ctxt: 	nil
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(148373504)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+	Receiver: a RubSmalltalkEditor
+	Arguments and temporary variables: 
+		aBlock: 	[ :result | 
+textMorph shoutStyler style: textMorph text.
+GLMPrintPoppe...etc...
+	Receiver's instance variables: 
+		defaultKeymappingIndex: 	an IdentityDictionary(#command->#(#noop: #cursorHome: #...etc...
+		textArea: 	a RubEditingArea(148373504)
+		selectorChooser: 	nil
+		notificationStrategy: 	a GLMPopperNotificationStrategy
+
+
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight
+	Receiver: a GLMMorphicPharoPlaygroundRenderer
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		renderer: 	a GLMMorphicRenderer
+		textMorph: 	a RubScrolledTextMorph(1023148032)
+		textModel: 	a GLMRubricSmalltalkTextModel
+
+
+MorphicAlarm(MessageSend)>>value
+	Receiver: MorphicAlarm(#value -> [ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+...etc...
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		receiver: 	[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		...etc...
+		selector: 	#value
+		arguments: 	#()
+		scheduledTime: 	15977122
+		numArgs: 	0
+
+
+MorphicAlarm>>value:
+	Receiver: MorphicAlarm(#value -> [ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+...etc...
+	Arguments and temporary variables: 
+		anArgument: 	15977136
+		nArgs: 	0
+	Receiver's instance variables: 
+		receiver: 	[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		...etc...
+		selector: 	#value
+		arguments: 	#()
+		scheduledTime: 	15977122
+		numArgs: 	0
+
+
+WorldState>>triggerAlarmsBefore:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		nowTime: 	15977136
+		pending: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (2560@1376)
+		canvas: 	a FormCanvas on: DisplayScreen(2560x1376x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> an OverflowRowMorph(718536704))(an Ove...etc...
+		lastStepTime: 	15977204
+		lastStepMessage: 	nil
+		lastCycleTime: 	15977202
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+		lastAlarmTime: 	15977204
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldState>>runLocalStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(511705088) [world]
+		now: 	15977136
+		morphToStep: 	nil
+		stepTime: 	nil
+		priorWorld: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (2560@1376)
+		canvas: 	a FormCanvas on: DisplayScreen(2560x1376x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> an OverflowRowMorph(718536704))(an Ove...etc...
+		lastStepTime: 	15977204
+		lastStepMessage: 	nil
+		lastCycleTime: 	15977202
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+		lastAlarmTime: 	15977204
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldState>>runStepMethodsIn:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(511705088) [world]
+		queue: 	WaitfreeQueue with 0 items
+		nextInQueue: 	nil
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (2560@1376)
+		canvas: 	a FormCanvas on: DisplayScreen(2560x1376x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> an OverflowRowMorph(718536704))(an Ove...etc...
+		lastStepTime: 	15977204
+		lastStepMessage: 	nil
+		lastCycleTime: 	15977202
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+		lastAlarmTime: 	15977204
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>runStepMethods
+	Receiver: a WorldMorph(511705088) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (2560@1376)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(984088576) a GLMSystemWindow(300154880) a Sy...etc...
+		fullBounds: 	(0@0) corner: (2560@1376)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (552861696) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldState>>doOneCycleNowFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (2560@1376)
+		canvas: 	a FormCanvas on: DisplayScreen(2560x1376x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> an OverflowRowMorph(718536704))(an Ove...etc...
+		lastStepTime: 	15977204
+		lastStepMessage: 	nil
+		lastCycleTime: 	15977202
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+		lastAlarmTime: 	15977204
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldState>>doOneCycleFor:
+	Receiver: a WorldState
+	Arguments and temporary variables: 
+		aWorld: 	a WorldMorph(511705088) [world]
+	Receiver's instance variables: 
+		hands: 	an Array(a HandMorph(760479744))
+		viewBox: 	(0@0) corner: (2560@1376)
+		canvas: 	a FormCanvas on: DisplayScreen(2560x1376x32)
+		damageRecorder: 	a DamageRecorder
+		stepList: 	a Heap(StepMessage(#stepAt: -> an OverflowRowMorph(718536704))(an Ove...etc...
+		lastStepTime: 	15977204
+		lastStepMessage: 	nil
+		lastCycleTime: 	15977202
+		alarms: 	a Heap(MorphicAlarm(#hideShow -> a RubCursor(534511616)))
+		lastAlarmTime: 	15977204
+		menuBuilder: 	a PragmaMenuBuilder ( nil ) 
+
+
+WorldMorph>>doOneCycle
+	Receiver: a WorldMorph(511705088) [world]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (2560@1376)
+		owner: 	nil
+		submorphs: 	an Array(a TaskbarMorph(984088576) a GLMSystemWindow(300154880) a Sy...etc...
+		fullBounds: 	(0@0) corner: (2560@1376)
+		color: 	(Color r: 0.937 g: 0.937 b: 0.937 alpha: 1.0)
+		extension: 	a MorphExtension (552861696) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+	Receiver: a MorphicUIManager
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		interactiveParser: 	nil
+		activeTranscript: 	Transcript
+
+
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+	Receiver: [ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ]
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		outerContext: 	MorphicUIManager>>spawnNewProcess
+		startpc: 	65
+		numArgs: 	0
+
+
+
+--- The full stack ---
+Date class(Object)>>doesNotUnderstand: #now
+UndefinedObject>>DoIt
+OpalCompiler>>evaluate
+RubSmalltalkEditor>>evaluate:andDo:
+RubSmalltalkEditor>>highlightEvaluateAndDo:
+[ 
+textMorph textArea editor
+	highlightEvaluateAndDo: [ :result | 
+		textMorph shoutStyler style: textMorph text.
+		GLMPrintPopper new openFromRubric: textMorph textArea withResult: result ] ] in GLMMorphicPharoPlaygroundRenderer(GLMMorphicPharoCodeRenderer)>>evaluateAndPopPrintHighlight
+MorphicAlarm(MessageSend)>>value
+MorphicAlarm>>value:
+WorldState>>triggerAlarmsBefore:
+WorldState>>runLocalStepMethodsIn:
+WorldState>>runStepMethodsIn:
+WorldMorph>>runStepMethods
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+MessageNotUnderstood: TextMorphForEditView>>textMorph
+4 January 2016 10:46:05.865261 pm
+
+VM: unix - i686 - linux-gnu - NBCoInterpreter NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+NBCogit NativeBoost-CogPlugin-EstebanLorenzano.21 uuid: 4d9b9bdf-2dfa-4c0b-99eb-5b110dadc697 Apr  2 2015
+https://github.com/pharo-project/pharo-vm.git Commit: 32d18ba0f2db9bee7f3bdbf16bdb24fe4801cfc5 Date: 2015-03-24 11:08:14 +0100 By: Esteban Lorenzano <estebanlm@gmail.com> Jenkins build #14904
+
+Image: Pharo4.0 [Latest update: #40625]
+
+TextMorphForEditView(Object)>>doesNotUnderstand: #textMorph
+	Receiver: a TextMorphForEditView(570687488)
+	Arguments and temporary variables: 
+		aMessage: 	textMorph
+		exception: 	MessageNotUnderstood: TextMorphForEditView>>textMorph
+		resumeValue: 	nil
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (1255@439)
+		owner: 	a TransformMorph(353107968)
+		submorphs: 	#()
+		fullBounds: 	(0@0) corner: (1255@439)
+		color: 	Color black
+		extension: 	a MorphExtension (616562688) [other:  (kmDispatcher -> a KMDispatche...etc...
+		borderWidth: 	0
+		borderColor: 	Color black
+		textStyle: 	a TextStyle Source Sans Pro
+		text: 	a Text for '"; is the cascade operator. It''s useful to send message to t...etc...
+		wrapFlag: 	true
+		paragraph: 	a Paragraph
+		editor: 	a SmalltalkEditor
+		container: 	nil
+		predecessor: 	nil
+		successor: 	nil
+		backgroundColor: 	nil
+		margins: 	(0@0) corner: (0@0)
+		defaultColor: 	nil
+		editView: 	a PluggableTextMorph(786956288)
+		acceptOnCR: 	false
+		autoAccept: 	false
+		acceptOnFocusChange: 	false
+		selectionColor: 	nil
+
+
+OCUndeclaredVariableWarning>>declareTempAndPaste:
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+		name: 	#next
+		insertion: 	nil
+		delta: 	nil
+		theTextString: 	nil
+		characterBeforeMark: 	nil
+		tempsMark: 	nil
+		newMethodNode: 	nil
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+[ self declareTempAndPaste: name ] in OCUndeclaredVariableWarning>>openMenuIn:
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+		aBlock: 	[ :labels :lines :caption | UIManager default chooseFrom: labels lines:...etc...
+		alternatives: 	an OrderedCollection()
+		labels: 	an OrderedCollection('Declare new temporary variable' 'Declare new inst...etc...
+		actions: 	an OrderedCollection([ self declareTempAndPaste: name ] [ self declare...etc...
+		lines: 	an OrderedCollection(2 2)
+		caption: 	'Unknown variable: next please correct, or cancel:'
+		choice: 	1
+		name: 	#next
+		interval: 	(1 to: 4)
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+OCUndeclaredVariableWarning>>openMenuIn:
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+		aBlock: 	[ :labels :lines :caption | UIManager default chooseFrom: labels lines:...etc...
+		alternatives: 	an OrderedCollection()
+		labels: 	an OrderedCollection('Declare new temporary variable' 'Declare new inst...etc...
+		actions: 	an OrderedCollection([ self declareTempAndPaste: name ] [ self declare...etc...
+		lines: 	an OrderedCollection(2 2)
+		caption: 	'Unknown variable: next please correct, or cancel:'
+		choice: 	1
+		name: 	#next
+		interval: 	(1 to: 4)
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+OCUndeclaredVariableWarning(OCSemanticWarning)>>defaultAction
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+OCUndeclaredVariableWarning>>defaultAction
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+		varName: 	#next
+		className: 	#UndefinedObject
+		selector: 	#DoIt
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+UndefinedObject>>handleSignal:
+	Receiver: nil
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+nil
+
+Context>>handleSignal:
+	Receiver: BlockClosure>>on:do:
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+		sender: 	WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+		pc: 	15
+		stackp: 	2
+		method: 	BlockClosure>>#on:do:
+		closureOrNil: 	nil
+		receiver: 	[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder ...etc...
+
+
+Context>>handleSignal:
+	Receiver: BlockClosure>>on:do:
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+		sender: 	OpalCompiler>>translate
+		pc: 	15
+		stackp: 	2
+		method: 	BlockClosure>>#on:do:
+		closureOrNil: 	nil
+		receiver: 	[ self compile ]
+
+
+Context>>handleSignal:
+	Receiver: BlockClosure>>on:do:
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+		sender: 	OpalCompiler>>compile
+		pc: 	15
+		stackp: 	2
+		method: 	BlockClosure>>#on:do:
+		closureOrNil: 	nil
+		receiver: 	[ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+...etc...
+
+
+Context>>handleSignal:
+	Receiver: BlockClosure>>on:do:
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+		sender: 	[ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	o...etc...
+		pc: 	15
+		stackp: 	2
+		method: 	BlockClosure>>#on:do:
+		closureOrNil: 	nil
+		receiver: 	[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+
+
+Context>>handleSignal:
+	Receiver: BlockClosure>>on:do:
+	Arguments and temporary variables: 
+		exception: 	OCUndeclaredVariableWarning: Undeclared temp: next
+	Receiver's instance variables: 
+		sender: 	OpalCompiler>>doSemanticAnalysis
+		pc: 	15
+		stackp: 	2
+		method: 	BlockClosure>>#on:do:
+		closureOrNil: 	nil
+		receiver: 	[ ast doSemanticAnalysisInContext: self compilationContext ]
+
+
+OCUndeclaredVariableWarning(Exception)>>signal
+	Receiver: OCUndeclaredVariableWarning: Undeclared temp: next
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		messageText: 	'Undeclared temp: next'
+		tag: 	nil
+		signaler: 	an OCASTSemanticAnalyzer
+		signalContext: 	OCUndeclaredVariableWarning(Exception)>>signal
+		handlerContext: 	nil
+		outerContext: 	nil
+		compilationContext: 	a CompilationContext
+		node: 	RBVariableNode(next)
+
+
+OCASTSemanticAnalyzer>>undeclaredVariable:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		variableNode: 	RBVariableNode(next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer>>visitVariableNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aVariableNode: 	RBVariableNode(next)
+		var: 	nil
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBVariableNode>>acceptVisitor:
+	Receiver: RBVariableNode(next)
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyzer
+	Receiver's instance variables: 
+		parent: 	RBReturnNode(^ next)
+		properties: 	nil
+		parentheses: 	nil
+		name: 	#next
+		start: 	1
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBVariableNode(next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitReturnNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aReturnNode: 	RBReturnNode(^ next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBReturnNode>>acceptVisitor:
+	Receiver: RBReturnNode(^ next)
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyzer
+	Receiver's instance variables: 
+		parent: 	RBSequenceNode(^ next)
+		properties: 	nil
+		return: 	nil
+		value: 	RBVariableNode(next)
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBReturnNode(^ next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+[ :each | self visitNode: each ] in OCASTSemanticAnalyzer>>visitSequenceNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aSequenceNode: 	RBSequenceNode(^ next)
+		each: 	RBReturnNode(^ next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(RBReturnNode(^ next))
+	Arguments and temporary variables: 
+		aBlock: 	[ :each | self visitNode: each ]
+		index: 	1
+	Receiver's instance variables: 
+an Array(RBReturnNode(^ next))
+
+OCASTSemanticAnalyzer>>visitSequenceNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aSequenceNode: 	RBSequenceNode(^ next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBSequenceNode>>acceptVisitor:
+	Receiver: RBSequenceNode(^ next)
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyzer
+	Receiver's instance variables: 
+		parent: 	DoIt
+	^ next
+		properties: 	nil
+		leftBar: 	nil
+		rightBar: 	nil
+		statements: 	an Array(RBReturnNode(^ next))
+		periods: 	#()
+		temporaries: 	#()
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	RBSequenceNode(^ next)
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer>>visitMethodNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aMethodNode: 	DoIt
+	^ next
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBMethodNode>>acceptVisitor:
+	Receiver: DoIt
+	^ next
+	Arguments and temporary variables: 
+		aProgramNodeVisitor: 	an OCASTSemanticAnalyzer
+	Receiver's instance variables: 
+		parent: 	nil
+		properties: 	nil
+		scope: 	an OCMethodScope 3
+		selector: 	#DoIt
+		keywordsPositions: 	nil
+		body: 	RBSequenceNode(^ next)
+		source: 	nil
+		arguments: 	#()
+		pragmas: 	nil
+		replacements: 	a SortedCollection()
+		nodeReplacements: 	an IdentityDictionary()
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	DoIt
+	^ next
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+OCASTSemanticAnalyzer>>analyze:
+	Receiver: an OCASTSemanticAnalyzer
+	Arguments and temporary variables: 
+		aNode: 	DoIt
+	^ next
+	Receiver's instance variables: 
+		scope: 	an OCMethodScope 3
+		blockcounter: 	nil
+		compilationContext: 	a CompilationContext
+
+
+RBMethodNode>>doSemanticAnalysis
+	Receiver: DoIt
+	^ next
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		parent: 	nil
+		properties: 	nil
+		scope: 	an OCMethodScope 3
+		selector: 	#DoIt
+		keywordsPositions: 	nil
+		body: 	RBSequenceNode(^ next)
+		source: 	nil
+		arguments: 	#()
+		pragmas: 	nil
+		replacements: 	a SortedCollection()
+		nodeReplacements: 	an IdentityDictionary()
+		compilationContext: 	a CompilationContext
+
+
+RBMethodNode>>doSemanticAnalysisInContext:
+	Receiver: DoIt
+	^ next
+	Arguments and temporary variables: 
+		aCompilationContext: 	a CompilationContext
+	Receiver's instance variables: 
+		parent: 	nil
+		properties: 	nil
+		scope: 	an OCMethodScope 3
+		selector: 	#DoIt
+		keywordsPositions: 	nil
+		body: 	RBSequenceNode(^ next)
+		source: 	nil
+		arguments: 	#()
+		pragmas: 	nil
+		replacements: 	a SortedCollection()
+		nodeReplacements: 	an IdentityDictionary()
+		compilationContext: 	a CompilationContext
+
+
+[ ast doSemanticAnalysisInContext: self compilationContext ] in OpalCompiler>>doSemanticAnalysis
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ next
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+BlockClosure>>on:do:
+	Receiver: [ ast doSemanticAnalysisInContext: self compilationContext ]
+	Arguments and temporary variables: 
+		exception: 	OCSemanticError
+		handlerAction: 	[ :ex | 
+ex defaultAction.
+^ self compilationContext failBlock v...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>doSemanticAnalysis
+		startpc: 	41
+		numArgs: 	0
+
+
+OpalCompiler>>doSemanticAnalysis
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ next
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ] in [ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: OCSourceCodeChanged
+	do: [ :notification | 
+		self source: notification newSourceCode.
+		notification retry ].
+cm := ast generate: self compilationContext compiledMethodTrailer ] in OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ next
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+BlockClosure>>on:do:
+	Receiver: [ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	Arguments and temporary variables: 
+		exception: 	OCSourceCodeChanged
+		handlerAction: 	[ :notification | 
+self source: notification newSourceCode.
+noti...etc...
+	Receiver's instance variables: 
+		outerContext: 	[ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugin...etc...
+		startpc: 	113
+		numArgs: 	0
+
+
+[ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: OCSourceCodeChanged
+	do: [ :notification | 
+		self source: notification newSourceCode.
+		notification retry ].
+cm := ast generate: self compilationContext compiledMethodTrailer ] in OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		cm: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ next
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+BlockClosure>>on:do:
+	Receiver: [ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: OCSourceCodeChan...etc...
+	Arguments and temporary variables: 
+		exception: 	SyntaxErrorNotification
+		handlerAction: 	[ :exception | 
+self compilationContext requestor
+	ifNotNil: [ 
+...etc...
+	Receiver's instance variables: 
+		outerContext: 	OpalCompiler>>compile
+		startpc: 	109
+		numArgs: 	0
+
+
+OpalCompiler>>compile
+	Receiver: an OpalCompiler
+	Arguments and temporary variables: 
+		cm: 	nil
+	Receiver's instance variables: 
+		ast: 	DoIt
+	^ next
+		source: 	a ReadStream
+		context: 	nil
+		receiver: 	nil
+		compilationContext: 	a CompilationContext
+		compilationContextClass: 	nil
+		useFaultyForParsing: 	false
+
+
+
+--- The full stack ---
+TextMorphForEditView(Object)>>doesNotUnderstand: #textMorph
+OCUndeclaredVariableWarning>>declareTempAndPaste:
+[ self declareTempAndPaste: name ] in OCUndeclaredVariableWarning>>openMenuIn:
+OCUndeclaredVariableWarning>>openMenuIn:
+OCUndeclaredVariableWarning(OCSemanticWarning)>>defaultAction
+OCUndeclaredVariableWarning>>defaultAction
+UndefinedObject>>handleSignal:
+Context>>handleSignal:
+Context>>handleSignal:
+Context>>handleSignal:
+Context>>handleSignal:
+Context>>handleSignal:
+OCUndeclaredVariableWarning(Exception)>>signal
+OCASTSemanticAnalyzer>>undeclaredVariable:
+OCASTSemanticAnalyzer>>visitVariableNode:
+RBVariableNode>>acceptVisitor:
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitReturnNode:
+RBReturnNode>>acceptVisitor:
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+[ :each | self visitNode: each ] in OCASTSemanticAnalyzer>>visitSequenceNode:
+Array(SequenceableCollection)>>do:
+OCASTSemanticAnalyzer>>visitSequenceNode:
+RBSequenceNode>>acceptVisitor:
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+OCASTSemanticAnalyzer>>visitMethodNode:
+RBMethodNode>>acceptVisitor:
+OCASTSemanticAnalyzer(RBProgramNodeVisitor)>>visitNode:
+OCASTSemanticAnalyzer>>analyze:
+RBMethodNode>>doSemanticAnalysis
+RBMethodNode>>doSemanticAnalysisInContext:
+[ ast doSemanticAnalysisInContext: self compilationContext ] in OpalCompiler>>doSemanticAnalysis
+BlockClosure>>on:do:
+OpalCompiler>>doSemanticAnalysis
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ] in [ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: OCSourceCodeChanged
+	do: [ :notification | 
+		self source: notification newSourceCode.
+		notification retry ].
+cm := ast generate: self compilationContext compiledMethodTrailer ] in OpalCompiler>>compile
+BlockClosure>>on:do:
+[ 
+[ 
+ast := self parse.
+self doSemanticAnalysis.
+self callPlugins ]
+	on: OCSourceCodeChanged
+	do: [ :notification | 
+		self source: notification newSourceCode.
+		notification retry ].
+cm := ast generate: self compilationContext compiledMethodTrailer ] in OpalCompiler>>compile
+BlockClosure>>on:do:
+OpalCompiler>>compile
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+[ self compile ] in OpalCompiler>>translate
+BlockClosure>>on:do:
+OpalCompiler>>translate
+OpalCompiler>>evaluate
+SmalltalkEditor>>evaluateSelectionAndDo:
+SmalltalkEditor>>evaluateSelection
+SmalltalkEditor>>doIt
+SmalltalkEditor>>doIt:
+SmalltalkEditor(TextEditor)>>performCmdActionsWith:shifted:return:
+SmalltalkEditor(TextEditor)>>dispatchCommandOn:return:
+SmalltalkEditor(TextEditor)>>dispatchOn:
+[ self dispatchOn: aKeyboardEvent ] in SmalltalkEditor(TextEditor)>>keystroke:
+SmalltalkEditor(TextEditor)>>handleKeystrokeAction:
+SmalltalkEditor(TextEditor)>>handleEditionAction:fromKeyboardEvent:
+SmalltalkEditor(TextEditor)>>keystroke:
+[ editor keystroke: evt ] in TextMorphForEditView(TextMorph)>>basicKeyStroke:
+TextMorphForEditView(TextMorph)>>handleInteraction:
+TextMorphForEditView>>handleInteraction:
+TextMorphForEditView(TextMorph)>>basicKeyStroke:
+[ self basicKeyStroke: evt ] in TextMorphForEditView(TextMorph)>>keyStroke:
+NECController class>>codeCompletionAround:textMorph:keyStroke:
+PharoCommonTools(ToolRegistry)>>codeCompletionAround:textMorph:keyStroke:
+TextMorphForEditView(TextMorph)>>keyStroke:
+TextMorphForEditView>>keyStroke:
+TextMorphForEditView(TextMorph)>>handleKeystroke:
+KeyboardEvent>>sentTo:
+TextMorphForEditView(Morph)>>handleEvent:
+TextMorphForEditView(Morph)>>handleFocusEvent:
+[ 
+ActiveHand := self.
+ActiveEvent := anEvent.
+result := focusHolder handleFocusEvent: (anEvent transformedBy: (focusHolder transformedFrom: self)) ] in HandMorph>>sendFocusEvent:to:clear:
+BlockClosure>>on:do:
+WorldMorph(PasteUpMorph)>>becomeActiveDuring:
+HandMorph>>sendFocusEvent:to:clear:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendKeyboardEvent:
+HandMorph>>handleEvent:
+HandMorph>>processEvents
+[ :h | 
+ActiveHand := h.
+h processEvents.
+ActiveHand := nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+[ 
+[ 
+World doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ 
+self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
