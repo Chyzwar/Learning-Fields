@@ -1,0 +1,28 @@
+{
+  "name": "CodingTests",
+  "description": "",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "",
+  "repository": "/CodingTests",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel src --out-dir lib",
+    "compile:watch": "babel src --out-dir lib --watch",
+    "start:watch": "watch 'node run start' ./lib"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-loader": "*",
+    "babel-preset-node5": "*",
+    "watch": "*"
+  },
+  "optionalDependencies": {
+    "eslint": "*",
+    "eslint-plugin-react": "*",
+    "eslint-config-airbnb": "*"
+  },
+  "dependencies": {
+    "lodash": "^4.6.1"
+  }
+}
