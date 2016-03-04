@@ -1,5 +1,7 @@
-"use strict";
+'use strict';
 
-const dupa = { a: 2 };
+var _lodash = require('lodash');
 
-let a = dupa.a;
+var _lodash2 = _interopRequireDefault(_lodash);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

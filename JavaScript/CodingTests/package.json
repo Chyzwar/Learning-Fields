@@ -9,7 +9,8 @@
   "scripts": {
     "compile": "babel src --out-dir lib",
     "compile:watch": "babel src --out-dir lib --watch",
-    "start:watch": "watch 'node run start' ./lib"
+    "start": "node lib/index.js",
+    "start:watch": "watch 'npm start' ./lib"
   },
   "devDependencies": {
     "babel-cli": "*",

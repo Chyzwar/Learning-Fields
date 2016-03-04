@@ -1,6 +1,1 @@
-
-
-
-const dupa = { a:2 };
-
-let { a } = dupa;
+import lodash from 'lodash';
