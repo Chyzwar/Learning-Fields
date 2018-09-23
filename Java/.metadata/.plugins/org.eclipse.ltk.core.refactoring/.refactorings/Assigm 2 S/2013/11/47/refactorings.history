@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;competitors.txt&apos; to &apos;Assignment 2&apos;&#x0D;&#x0A;- Original project: &apos;Assigm 2 S&apos;&#x0D;&#x0A;- Destination element: &apos;Assignment 2&apos;&#x0D;&#x0A;- Original element: &apos;competitors.txt&apos;" description="Copy file" destination="=Assignment 2" element1="src/AssignmentOne/competitors.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1384871672622" units="0" version="1.0"/>
-</session>

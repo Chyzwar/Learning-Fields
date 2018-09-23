@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Move 1 resources to &apos;1 Excepions&apos;" description="Move 1 resources to &apos;1 Excepions&apos;" destination="/1 Excepions" element1="src/StaffList.txt" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1390296807837" updateReferences="true"/>
-</session>
